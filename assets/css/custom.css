@@ -1,0 +1,411 @@
+body {
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.raw-header > a, .raw-header > a:visited, .raw-header > a:active {
+	text-decoration: none;
+	color: rgba(0,0,0,0.8);
+	font-size: 24px;
+}
+
+.address-index {
+	margin-top: -8px !important;
+}
+
+.blog {
+	margin-bottom: 30px;
+}
+
+.blog-title {
+	margin: 0 0 0 21px;
+}
+
+.blog-description {
+	margin: 0 0 0 21px;
+}
+
+blockquote {
+  margin-left: 0;
+  border-left: 3px solid #5858585;
+}
+
+p {
+  color: rgba(0,0,0,0.8);
+}
+
+blockquote ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 732px;
+  margin: 0 auto;
+}
+
+.index-header {
+  height: 420px;
+}
+
+.index-header .center {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index-header .section {
+  display: block;
+  margin: auto;
+}
+
+.index-thumbs {
+  display: inline-block;
+  height: 350px;
+  margin: 7.5px;
+  background-size: cover !important;
+  position: relative;
+}
+
+.thumbs-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+  margin: 20px 30px;
+  width: calc(100% - 60px);
+}
+
+.index-thumbs:hover address {
+  position: relative;
+  transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63), -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.index-thumbs:hover address {
+  position: absolute;
+  height: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: -webkit-transform .2s !important;
+  transition: transform .2s !important;
+  transition: transform .2s, -webkit-transform .2s !important;
+}
+
+.index-thumbs h1, .index-thumbs address{
+  color: white;
+  z-index: 6;
+  display: inline-block;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.index-thumbs h1 {
+  margin: 0;
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  width: 100%;
+}
+
+.index-thumbs address .author {
+  font-size: 14px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+
+.index-thumbs address .date {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-weight: 700;
+  line-height: 10px;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.index-art-desc {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  height: 0;
+  transition: -webkit-transform .2s, height .2s !important;
+  transition: transform .2s, height .2s !important;
+  transition: transform .2s, -webkit-transform .2s, height .2s !important;
+}
+
+.index-thumbs:hover .index-art-desc {
+  position: relative;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63), -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  display: inline-block;
+}
+
+.index-thumbs::before, .parallax::before {
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background: url(../../assets/img/static/bg_mask.png);
+  opacity: 0.5;
+}
+
+.index-thumbs::before {
+  background: url(../../assets/img/static/bg_mask.png), linear-gradient(transparent, black);
+  opacity: 0.3;
+}
+
+.parallax::before {
+  z-index: 6;
+  opacity: 0.69;
+}
+
+.index-main {
+  margin: 37.5px auto;
+  max-width: 1000px;
+}
+
+@media only screen and (min-width: 993px) {
+
+  .index-thumbs:nth-child(4n+1) {
+    width: 568px;
+  }
+
+  .index-thumbs:nth-child(4n+2) {
+    width: 383px;
+  }
+
+  .index-thumbs:nth-child(4n+3) {
+    width: 383px;
+  }
+
+  .index-thumbs:nth-child(4n+4) {
+    width: 568px;
+  }
+
+  .index-thumbs:nth-child(odd):last-child, .index-thumbs:first-child:last-child {
+    width: 970px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .index-thumbs {
+    width: calc(100% - 30px);
+    margin: 0 15px 7.5px 15px;
+  }
+
+  .index-main {
+    margin-top: 15px;
+  }
+}
+
+/* ARTICLES */
+
+.cover-header {
+  height: 420px;
+}
+
+.cover-header .center {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cover-header .section {
+  display: block;
+  margin: auto;
+}
+
+.cover-header address {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: .82rem 0 .656rem 0;
+  font-style: normal;
+}
+
+.raw-header address {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: normal;
+  color: #79828B;
+  margin: 12px 21px;
+}
+
+.raw-header address a {
+  color: #79828B;
+  -webkit-tap-highlight-color: rgba(0,0,0,.44);
+  text-decoration: none;
+  border-bottom: .1em solid rgba(0,0,0,.2);
+}
+.raw-header h1 {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 31px;
+  line-height: 31px;
+  margin: 21px 21px 12px;
+}
+
+.button {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 16px;
+  text-transform: uppercase;
+  padding: 2px 12px;
+  margin-top: 21px;
+  background-color: #fff;
+}
+
+.button .material-icons {
+  font-size: 17px;
+  line-height: 25px;
+  vertical-align: bottom;
+}
+
+.article-bottom {
+  display: flex;
+}
+.article-bottom .button{
+  margin: auto;
+}
+
+article p, ul, ol {
+  font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 21px 14px;
+}
+
+article ol {
+  padding: inherit;
+}
+
+article h1, h2, h3, h4, h5, h6 {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+article h1 {
+  font-size: 32px;
+  line-height: 37px;
+  margin: 21px 21px 12px;
+}
+
+article h2 {
+  font-size: 28px;
+  margin: 18px 21px 9px;
+}
+
+article h3 {
+  font-size: 24px;
+  margin: 18px 21px 7px;
+}
+
+article h4 {
+  font-size: 22px;
+  margin: 18px 21px 5px;
+}
+
+article h5 {
+  font-size: 20px;
+  margin: 18px 21px 5px;
+}
+
+article h6 {
+  font-size: 18px;
+  margin: 18px 21px 5px;
+}
+
+article img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+article p code {
+  background-color: #f6f8fa;
+}
+article pre {
+  padding: 16px;
+  margin: 0 30px 12px;
+  background-color: #f6f8fa;
+}
+
+article a[href] {
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0,0,0,.44);
+  text-decoration: none;
+  border-bottom: .1em solid rgba(0,0,0,.7);
+}
+
+code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+}
+
+hr {
+  opacity: 0.15;
+  margin: 0 6%;
+}
+
+blockquote {
+  padding-left: 1rem;
+  border-left: 5px solid black;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+ul:not(.browser-default) li {
+  list-style-type: disc;
+}
+
+li {
+  margin-left: 21px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+table {
+  margin: 0 21px 8px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: inherit;
+  left: inherit;
+  opacity: inherit;
+}
