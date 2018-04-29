@@ -7,17 +7,17 @@ Check my personal [blog](https://blog.rensite.ru) for [demo](https://blog.rensit
 # How to install?
 Follow 3 easy steps! 
 
-#### 1. Clone || Download
+### 1. Clone || Download
 `git clone https://github.com/gafuri/justblog.git .` in `/var/www/html/` (or any webserver root) or [download here](https://github.com/gafuri/justblog/archive/master.zip) the archive and extract into you webserver root.
 
 
-#### 2. Configure
+### 2. Configure
 Config file is here `./include/Config.php`, edit it according comments inside.
 Replace favicon `./assets/img/meta/favicon.png`
 Replace cover `./assets/img/static/bg.jpg`
 
 
-#### 3. Write
+### 3. Write
 Create a new markdown file in ```/articles/``` folder, like `hacker.md`.
 Put any of your files (i.e. images) to ```/assets/``` folder.
 
