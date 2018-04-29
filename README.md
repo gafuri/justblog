@@ -46,6 +46,8 @@ You can translate blog into your language by simply editing `./includes/Language
 - [ ] Images uploader
 - [ ] Git Publishing
 - [ ] Built in editor
+- [ ] Search
+- [ ] Tags
 
 # References
 [parsedown.org](http://parsedown.org) - PHP lib for markdown to html conversion.
