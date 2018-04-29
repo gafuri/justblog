@@ -2,6 +2,8 @@
 Nothing but blog inspired by [Telegra.ph](https://telegra.ph).
 Intended for hackers who notes in markdown.
 
+Check my personal [blog](https://blog.rensite.ru) for [demo](https://blog.rensite.ru).
+
 ## How to install?
 Easy in 3 steps!
 
@@ -39,10 +41,11 @@ Currently English, Russian and French are availabe.
 You can translate blog into your language by simply editing `./includes/Languages.php`. Please send me pull request after ;)
 
 # ToDo
-[] css -> scss
-[] Images uploader
-[] Git Publishing
-[] Built in editor
+- [ ] Demo
+- [ ] css -> scss
+- [ ] Images uploader
+- [ ] Git Publishing
+- [ ] Built in editor
 
 # References
 [parsedown.org](http://parsedown.org) - PHP lib for markdown to html conversion.
